@@ -7,6 +7,15 @@
 
 	<style>
 
+
+		.google-home {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+
+
 		.google-logo {
 			display: flex;
 			flex-direction: column;
@@ -29,16 +38,26 @@
 		.search-box {
 			display: flex;
 			flex-direction: column;
-			align-items:center;
-			width: auto;
-			padding: 20px;
-			max-width: 584px;
-			border-width: 2px;
-			border-radius: 24px;
+			align-items: center;
 		}
 
-		.search-form {
-			padding: 5px 8px 0 16px;
+		.search-form [type="text"] {
+			display: flex;
+			border: 1px solid #dfe1e5;
+			box-shadow: none;
+			border-radius: 24px;
+			height: 44px;
+			margin: 0 auto;
+			width: auto;
+			max-width: 584px;
+			
+		}
+
+		.search-form input:focus {
+  			outline: none;
+  			box-shadow: none;
+
+
 		}
 
 		.buttons-container {
@@ -87,40 +106,45 @@
 
 <body>
 
-<div class="google-logo">
-	<img id="glogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
 
-</div>
+<div class="google-home">
 
-
-<!-- All search elements go here (search box and buttons)-->
-<div class="search-container">
-
-	<!-- This div will center all search elements-->
-	<div class="search-elements-center">
-
-		<!--Container for search box-->
-		<div class="search-box">
-			<form action="" class="search-form">
-
-				<input type="text">
-							
-
-			</form>
-	
-		</div>
-
-		<!--Container for search buttons-->
-		<div class="buttons-container">
-
-			<input class="search-button" value="Google Search" name="google-search" type="submit">
-
-			<input class="feeling-lucky-button" value="I'm Feeling Lucky" name="feeling-lucky" type="submit">
-
-			
-		</div>
+	<div class="google-logo">
+		<img id="glogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
 
 	</div>
+
+
+	<!-- All search elements go here (search box and buttons)-->
+	<form action="https://google.com" class="search-container">
+
+		<!-- This div will center all search elements-->
+		<div class="search-elements-center">
+
+			<!--Container for search box-->
+			<div class="search-box">
+				<div class="search-form">
+
+					<input type="text" name="abc">
+								
+
+				</div>
+		
+			</div>
+
+			<!--Container for search buttons-->
+			<div class="buttons-container">
+
+				<input class="search-button" value="Google Search" name="google-search" type="submit">
+
+				<input class="feeling-lucky-button" value="I'm Feeling Lucky" name="feeling-lucky" type="submit">
+
+				
+			</div>
+
+		</div>
+
+	</form>
 
 </div>
 
