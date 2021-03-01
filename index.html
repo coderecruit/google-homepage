@@ -29,15 +29,42 @@
 
 		}
 
+		.header-elements { 
+			display: flex;
+			min-width: 400px;
+			justify-content: flex-end;
+			margin-right: 8px;
+		}
+
 		.gmail-images-container {
-			padding-right: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		.gmail-button {
 			padding: 5px;
+			color:rgba(0,0,0,0.87);
+			font-size: 13px;
+			font-family: arial,sans-serif;
+		}
+
+		.images-button {
+			padding-left: 15px;
+			padding-right: 15px;
+			color: rgba(0,0,0,0.87);
+			font-size: 13px;
+			font-family: arial,sans-serif;
+		}
+
+		.container-google-apps-sign-in {
+			display: flex;
+			align-items: center;
 		}
 
 		.google-apps-container {
+			display: inline;
+			padding: 12px;
 		}
 
 		.google-apps-button {
@@ -45,6 +72,25 @@
 			display: inline;
 			max-height: 16px;
 
+		}
+
+		.sign-in-container {
+			background-color: #1a73e8;
+			border-radius: 4px;
+			width: 48px;
+			padding: 9px 23px;
+			margin-left: 8px;
+			margin-right: 8px;
+
+		}
+
+		.sign-in-button {
+			color: #fff;
+			margin-right: 8px;
+			font-family: helvetica,arial;
+			font-size: 14px;
+			margin-right: 8px;
+			
 		}
 
 		.google-logo {
@@ -179,29 +225,39 @@
 
 	<div class="page-header">
 
-		<div class="gmail-images-container">
-			<a class="gmail-button">Gmail
-
-			</a>
-
-			<a class="images button">Images
-
-			</a>
-
-		</div>
-
-		<div class="google-apps-container">
-
-			<img class="google-apps-button" src="images/keyboard-buttons-or-visualization-button-of-nine-squares-svgrepo-com.svg" alt="">
-
-		</div>
+		<div class="header-elements">
 
 
-		<div class="sign-in-container">
+			<div class="gmail-images-container">
 
-			<a class="sign-in-button">Sign in
+				<a class="gmail-button">Gmail
 
-			</a>
+				</a>
+
+				<a class="images-button">Images
+
+				</a>
+
+			</div>
+
+			<div class="container-google-apps-sign-in">
+
+				<div class="google-apps-container">
+
+					<img class="google-apps-button" src="images/keyboard-buttons-or-visualization-button-of-nine-squares-svgrepo-com.svg" alt="">
+
+				</div>
+
+
+				<div class="sign-in-container">
+
+					<a class="sign-in-button">Sign in
+
+					</a>
+
+				</div>
+
+			</div>	
 
 		</div>
 
