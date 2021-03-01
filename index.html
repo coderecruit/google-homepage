@@ -7,6 +7,9 @@
 
 	<style>
 
+		body {
+			margin: 0;
+		}
 
 		.google-home {
 			display: flex;
@@ -17,14 +20,32 @@
 
 		.page-header{
 			display: flex;
-			flex-direction: row;
 			justify-content: flex-end;
-			padding: 6px;
+			align-items: center;
 			font-size: 13px;
 			font-family:  Arial,sans-serif;
-			float: right;
+			min-width: 320px;
+			height: 60px;
+
 		}
 
+		.gmail-images-container {
+			padding-right: 15px;
+		}
+
+		.gmail-button {
+			padding: 5px;
+		}
+
+		.google-apps-container {
+		}
+
+		.google-apps-button {
+			padding: 4px;
+			display: inline;
+			max-height: 16px;
+
+		}
 
 		.google-logo {
 			display: flex;
@@ -158,21 +179,31 @@
 
 	<div class="page-header">
 
-		<a class="gmail-button">Gmail
+		<div class="gmail-images-container">
+			<a class="gmail-button">Gmail
 
-		</a>
+			</a>
 
-		<a class="images button">Images
+			<a class="images button">Images
 
-		</a>
+			</a>
 
-		<a class="google-apps-button" href="#"> Apps<img src="keyboard-buttons-or-visualization-button-of-nine-squares-svgrepo-com" alt="">
+		</div>
 
-		</a>
+		<div class="google-apps-container">
 
-		<a class="sign-in-button">Sign in
+			<img class="google-apps-button" src="images/keyboard-buttons-or-visualization-button-of-nine-squares-svgrepo-com.svg" alt="">
 
-		</a>
+		</div>
+
+
+		<div class="sign-in-container">
+
+			<a class="sign-in-button">Sign in
+
+			</a>
+
+		</div>
 
 	</div>
 
