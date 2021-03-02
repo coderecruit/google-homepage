@@ -7,14 +7,17 @@
 
 	<style>
 
+
 		body {
-			margin: 0;
+		height: 100%;
+		margin: 0;
 		}
+
 
 		.google-home {
 			display: flex;
 			flex-direction: column;
-			height: 100%;
+			min-height: 100%;
 			min-width: 284px;
 		}
 
@@ -93,10 +96,16 @@
 			
 		}
 
-		.google-logo {
+		.Google-logo-container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+		}
+
+		.inner-logo-container {
+			max-height: 92px;
+			height: 100%;
+			margin-top: 92px;
 		}
 
 		#glogo {
@@ -152,7 +161,7 @@
 			border: none;
 			box-shadow: none;
 			border-radius: 24px;
-			height: 44px;
+			height: 34px;
 			margin: 0 auto;
 			width: auto;
 			max-width: 584px;
@@ -211,6 +220,47 @@
 			cursor: pointer;
 			user-select: none;	
 		}
+
+		.footer-global {
+			background: #f2f2f2;
+			position: absolute;
+			bottom: 0;
+			min-width: 1600px;
+		}
+
+		.footer-country {
+			padding: 15px 30px;
+			border-bottom: 1px solid #dadce0;
+			font-size: 15px;
+			font-family: arial, sans-serif;
+			color: rgba(0,0,0,.54);
+		}
+
+		.footer-links {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 20px;
+			color: rgba(0,0,0,.54);
+			font-size: 14px;
+		}
+
+		.links-left {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.links-right {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.links-in-footer{
+			color: #70757a;
+			font-size: 14px;
+			font-family: arial, sans-serif;
+			padding: 15px;
+		}
+
 		
 		
 		</style>
@@ -265,10 +315,11 @@
 
 
 
-	<div class="google-logo">
-		<img id="glogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+	<div class="Google-logo-container">
+		<div class="inner-logo-container">
+			<img id="glogo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
 
-	</div>
+		</div>
 
 
 	<div class="search-area">
@@ -302,6 +353,61 @@
 			</div>
 
 		</form>
+
+	</div>
+
+
+	<div class="footer-global">
+
+		<div class="footer-country"> Portugal
+
+		</div>
+
+
+		<div class="footer-links">
+
+
+			<div class="links-left">
+
+				<a class="links-in-footer"> About
+
+				</a>
+
+				<a class="links-in-footer"> Advertising
+
+				</a>
+
+				<a class="links-in-footer"> Business
+
+				</a>
+
+				<a class="links-in-footer">How Search works
+
+				</a>
+
+
+			</div>
+
+			<div class="links-right">
+
+				<a class="links-in-footer">Privacy
+
+				</a>
+
+				<a class="links-in-footer">Terms
+
+				</a>
+
+				<a class="links-in-footer">Settings
+
+				</a>
+
+
+			</div>
+
+
+		</div>
+
 
 	</div>
 
